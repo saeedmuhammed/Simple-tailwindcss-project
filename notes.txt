@@ -1,0 +1,18 @@
+npm is a package manager from nodejs helps you to install packages 
+
+
+npm init -y   // open dependencies file of the project
+    inside it write scripts:{
+        build-css :"tailwindcss -i ./src/style.css -o ./style.css --watch"
+    }
+    then write in terminal => npm run build-css
+
+    
+npm install -D tailwindcss
+npx tailwindcss init // create dependencies file of tailwindcss
+    mode:'jit',    => will use the classes that we use in the html file not all the classes of tailwind this make file faster
+    content: ["./*.{html,js}"], 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
